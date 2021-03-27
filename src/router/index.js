@@ -38,6 +38,12 @@ router.beforeEach((to, from, next) => {
 		next({
 			name: 'Home'
 		});
+	} else if ((store.state.answers.length !== store.state.questions.length) &&
+		(to.name !== 'Quizz')
+	) {
+		next({
+			name: 'Quizz'
+		});
 	}
 
 	next();
