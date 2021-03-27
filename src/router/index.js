@@ -2,6 +2,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 
+import store from '@/store';
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -11,9 +13,14 @@ const routes = [
 		component: Home
 	},
 	{
-		path: '/about',
-		name: 'About',
-		component: () => import('../views/About.vue')
+		path: '/quizz',
+		name: 'Quizz',
+		component: () => import('../views/Quizz.vue')
+	},
+	{
+		path: '/results',
+		name: 'Results',
+		component: () => import('../views/Results.vue')
 	}
 ];
 
@@ -21,6 +28,19 @@ const router = new VueRouter({
 	mode: 'history',
 	base: process.env.BASE_URL,
 	routes
+});
+
+router.beforeEach((to, from, next) => {
+	if ((store.state.name === '') &&
+		(store.state.email === '') &&
+		(to.name !== 'Home')
+	) {
+		next({
+			name: 'Home'
+		});
+	}
+
+	next();
 });
 
 export default router;

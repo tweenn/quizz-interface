@@ -1,17 +1,20 @@
 <template>
-	<v-container class="home">
-		<HelloWorld msg="Welcome to Your Vue.js App"/>
+	<v-container class="home py-8">
+		<v-row justify="center">
+			<v-col xs="12" sm="8">
+				<HomeCard />
+			</v-col>
+		</v-row>
 	</v-container>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import HomeCard from '@/components/home/Home.vue';
 
 export default {
 	name: 'Home',
 	components: {
-		HelloWorld
+		HomeCard
 	}
 };
 </script>
