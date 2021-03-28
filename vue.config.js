@@ -5,5 +5,5 @@ module.exports = {
 	devServer: {
 		disableHostCheck: true
 	},
-	publicPath: process.env.NODE_ENV === 'production' ? '/tweenn/quizz-interface/' : ''
+	publicPath: process.env.NODE_ENV === 'production' ? '/quizz-interface/' : ''
 };
