@@ -1,5 +1,8 @@
 
 export default {
+	userName (state) {
+		return state.name;
+	},
 	questions (state) {
 		return state.questions;
 	},

@@ -31,7 +31,7 @@ export default [
 				}
 			},
 			{
-				text: 'Rodan',
+				text: 'Power Rangers',
 				points: {
 					typeA: -5,
 					typeB: -1,
@@ -63,7 +63,7 @@ export default [
 				}
 			},
 			{
-				text: 'NDA',
+				text: '1Kg of NDA',
 				points: {
 					typeA: -1,
 					typeB: -2,
