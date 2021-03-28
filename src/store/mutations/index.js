@@ -6,6 +6,9 @@ export default {
 	email (state, value) {
 		state.email = value;
 	},
+	legals (state, value) {
+		state.legals = value;
+	},
 	setAnswer (state, answer) {
 		state.answers[answer.id] = answer.value;
 

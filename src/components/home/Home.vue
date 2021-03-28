@@ -153,6 +153,7 @@ export default {
 			if ((this.name !== '') && (this.email !== '')) {
 				this.$store.commit('name', this.name);
 				this.$store.commit('email', this.email);
+				this.$store.commit('legals', true);
 				this.$router.push({ name: 'Quizz' });
 			}
 		}
