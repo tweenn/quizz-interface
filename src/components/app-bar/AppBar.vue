@@ -13,8 +13,13 @@
 				transition="scale-transition"
 				width="30"
 			/>
-			<p class="ma-0 title">
-				A Quizz powered by Vue.js and Vuetify
+			<p class="ma-0 text-sm-h6">
+				<span class="d-none d-sm-inline">
+					A Quizz powered by Vue.js, Vuetify & ApexCharts
+				</span>
+				<span class="d-sm-none">
+					A Quizz
+				</span>
 			</p>
 		</div>
 
