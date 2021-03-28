@@ -1,20 +1,19 @@
 <template>
-	<v-container class="home py-8">
+	<v-container class="results py-8">
 		<v-row justify="center">
 			<v-col xs="12" sm="8">
-				<HomeCard />
+				<resultsCard />
 			</v-col>
 		</v-row>
 	</v-container>
 </template>
 
 <script>
-import HomeCard from '@/components/home/Home.vue';
+import resultsCard from '@/components/results/ResultsCard.vue';
 
 export default {
-	name: 'Home',
 	components: {
-		HomeCard
+		resultsCard
 	}
 };
 </script>
